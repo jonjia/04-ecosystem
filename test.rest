@@ -1,1 +1,19 @@
+### get user
 GET http://localhost:8080
+
+### update user
+PATCH http://localhost:8080
+Content-Type: application/json
+
+{
+    "skills": ["JS"]
+}
+
+
+### invalid request
+PATCH http://localhost:8080
+Content-Type: application/json
+
+{
+    "skills": "JS"
+}
